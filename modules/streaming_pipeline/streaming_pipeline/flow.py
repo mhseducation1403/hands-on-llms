@@ -18,7 +18,7 @@ from streaming_pipeline.qdrant import QdrantVectorOutput
 
 
 def build(
-    is_batch: bool = False,
+    is_batch: bool = True,
     from_datetime: Optional[datetime.datetime] = None,
     to_datetime: Optional[datetime.datetime] = None,
     model_cache_dir: Optional[Path] = None,
@@ -60,7 +60,7 @@ def build(
 
 
 def _build_input(
-    is_batch: bool = False,
+    is_batch: bool = True,
     from_datetime: Optional[datetime.datetime] = None,
     to_datetime: Optional[datetime.datetime] = None,
     is_input_mocked: bool = False,
