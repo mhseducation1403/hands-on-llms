@@ -23,6 +23,6 @@ def build_flow(
 
     initialize(logging_config_path=logging_config_path, env_file_path=env_file_path)
 
-    flow = flow_builder(model_cache_dir=model_cache_dir, debug=debug)
+    flow = flow_builder(model_cache_dir=model_cache_dir, debug=debug,is_batch=True)
 
     return flow
